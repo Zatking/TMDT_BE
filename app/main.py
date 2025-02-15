@@ -16,7 +16,7 @@ app.include_router(product_router.router, prefix="/api", tags=["products"])
 
 @app.get("/")
 def root():
-    return {"message": "Welcome to FastAPI with SQL Server 2/2"}
+    return {"message": "Welcome to FastAPI with SQL Server On Vercel"}
 
 @app.get("/Hello")
 def Hello():
