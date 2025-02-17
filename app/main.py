@@ -25,5 +25,5 @@ def Hello():
 
 @app.get("/VercelTest")
 def VercelTest():
-    return {"message": "Vercel Test"}
+    return {"message": "Vercel Testing"}
 
