@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from app.router import brand_router,cate_router,product_router
-from app.database.data import Base, engine
+from router import brand_router,cate_router,product_router
+from database.data import Base, engine
 
 # Tạo bảng trong database
 Base.metadata.create_all(bind=engine)
@@ -20,6 +20,6 @@ def root():
 
 @app.get("/Hello")
 def Hello():
-    return {"message": "Hello World Mr.Thanh"}
+    return {"message": "Hello World Mr.Thanh HUFLIT"}
 
 

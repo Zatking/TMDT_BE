@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from app.model.model import Product
+from model.model import Product
 
 
 # Hàm lấy tất cả các sản phẩm

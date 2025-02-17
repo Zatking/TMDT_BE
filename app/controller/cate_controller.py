@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from app.model.model import Category
+from model.model import Category
 
 # Hàm lấy tất cả các danh mục sản phẩm
 def get_cate(db: Session):

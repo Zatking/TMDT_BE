@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from app.model.model import Account,Admin
+from model.model import Account,Admin
 
 
 #APi tạo tài khoản admin

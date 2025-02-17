@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from app.model.model import Brand
+from model.model import Brand
 
 
 
