@@ -23,3 +23,7 @@ def Hello():
     return {"message": "Hello World Mr.Thanh HUFLIT"}
 
 
+@app.get("/VercelTest")
+def VercelTest():
+    return {"message": "Vercel Test"}
+
