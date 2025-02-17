@@ -20,7 +20,7 @@ def root():
 
 @app.get("/Hello")
 def Hello():
-    return {"message": "Hello World Mr.Thanh HUFLIT"}
+    return {"message": "Hello World Mr.Thanh HUFLIT k28"}
 
 
 @app.get("/VercelTest")
