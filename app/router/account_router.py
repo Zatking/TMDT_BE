@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException,Response,status
-from sqlalchemy.orm import Session
 from app.database.data import SessionLocal
 from app.controller import account_controller
+from sqlalchemy.ext.asyncio import AsyncSession
 from pydantic import BaseModel
 
 # Định nghĩa router
@@ -32,7 +32,7 @@ class AccountUser(BaseModel):
 
 # API lấy tất cả các tài khoản admin
 @router.get("/get_admin")
-def get_all_admin(db: Session = Depends(get_db)):
+async def get_all_admin(db: Session = Depends(get_db)):
     admins = account_controller.get_all_admin(db)
     return admins
 
