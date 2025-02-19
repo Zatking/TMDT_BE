@@ -3,7 +3,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 # Cấu hình kết nối đến SQL Server
-DATABASE_URL = "mssql+pyodbc://sa:123@Zatk/BETMDT?driver=ODBC+Driver+17+for+SQL+Server"
+DATABASE_URL = "mssql+pymssql://sa:123@Zatk/BETMDT?driver=ODBC+Driver+17+for+SQL+Server"
 
 # Tạo engine kết nối
 engine = create_engine(DATABASE_URL)
