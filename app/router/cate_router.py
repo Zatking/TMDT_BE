@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException,Response,status
 from sqlalchemy.orm import Session
-from database.data import SessionLocal
-from controller import cate_controller
+from app.database.data import SessionLocal
+from app.controller import cate_controller
 from pydantic import BaseModel
 
 # Định nghĩa router

@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String, ForeignKey, Date
 from sqlalchemy.orm import relationship
-from database.data import Base
+from app.database.data import Base
 
 # Định nghĩa bảng Category
 class Category(Base):

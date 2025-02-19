@@ -1,3 +1,3 @@
 from sqlalchemy.orm import Session
-from model.model import Order, OrderDetail
+from app.model.model import Order, OrderDetail
 
