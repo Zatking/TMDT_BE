@@ -1,6 +1,6 @@
-from fastapi import FastAPI
 from router import brand_router,cate_router,product_router
 from database.data import Base, engine
+from fastapi import FastAPI
 
 # Tạo bảng trong database
 Base.metadata.create_all(bind=engine)
